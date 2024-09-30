@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Crescente</title>
+</head>
+<body>
+    <script>
+        //Agora seu programa deve receber dois números e exibir eles em ordem crescente.
+
+        document.write("Organizando os números escolhidos de forma crescente.<br>");
+
+        let n1 = parseInt(prompt("Digite o primeiro número"));
+        let n2 = parseInt(prompt("Digite o segundo número"));
+
+        if(n1==n2){
+
+            document.write("Números iguais.");
+        }else {
+            
+        if(n1>n2) {
+            document.write(n2 + ", " + n1);
+        } else {
+            document.write(n1 + ", " + n2);
+        }
+
+    }
+        </script>
+    
+</body>
+</html>

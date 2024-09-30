@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual número é maior?</title>
+</head>
+<body>
+    <script>
+        //Altere o exercício anterior de forma que ele informe também se os números são iguais.
+
+        document.write("Saiba se o número que você está digitando é menor/maior ou igual <br>");
+
+        let n1 = parseInt(prompt("Digite um número"));
+        let n2 = parseInt(prompt("Digite outro número"));
+
+        if(n1==n2) {
+
+            document.write("Você digitou dois números iguais.");
+        }else {
+            if(n1>n2){
+                document.write("Você digitou " + n1 + " e " + n2 + ". O número " + n1 + " é maior que o número " + n2 + ".");
+            }else {
+                document.write("Você digitou " + n1 + " e " + n2 + ". O número " + n2 + " é maior que o número " + n1 + ".");
+            }
+        }
+    </script>
+    
+</body>
+</html>

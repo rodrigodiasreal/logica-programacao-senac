@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou ímpar?</title>
+</head>
+<body>
+    <script>
+
+        //Solicite que o usuário digite um número. Informe então se este número é par ou ímpar.
+        document.write("Descubra se seu número é par ou ímpar<br>");
+
+        let n = parseInt(prompt("Digite seu número"));
+
+        if(n%2 == 0){
+            document.write("Você digitou " + n + ". Seu número é par.");
+        }else {
+            document.write("Você digitou " + n + ". Seu número é ímpar.");
+        }
+    </script>
+    
+</body>
+</html>

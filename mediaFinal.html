@@ -11,12 +11,27 @@
 
         document.write("Descubra sua média final:<br>");
 
-        let nota1 = parseInt(prompt("Digite sua primeira nota"));
-        let nota2 = parseInt(prompt("Digite sua segunda nota"));
+        let nota1 = parseFloat(prompt("Digite sua primeira nota"));
+        let nota2 = parseFloat(prompt("Digite sua segunda nota"));
 
         let media = ((nota1 + nota2) /2);
 
-        document.write("Sua primeira nota foi de " + nota1 + " e sua segunda nota foi de " + nota2 + ". Sua média final é " + media + ".");
+        if(media >=6){
+
+            document.write("Parabéns, você passou, sua média final é: " + media + ".<br>");
+
+            if(media == 10){
+
+                document.write("Você foi bem demais, tirou nota " + media + ". Parabéns.");
+            }
+        } else {
+
+            if(media >= 2){
+                document.write("Você reprovou, sua média é " + media + ". Porém, você pode fazer a REA.");
+            } else {
+                document.write("Você reprovou, e por sua nota ser menor que 2, você não pode fazer a REA. <br>Sua média final foi: " + media + ".")
+            }
+        }
     </script>
 </body>
 </html>

@@ -9,12 +9,12 @@
     <script>
         //Escreva um programa que pede para o usuário digitar um inteiro e imprime apenas um número: 0 ou 1. Imprime 0 se o inteiro digitado for par e imprime 1 caso contrário. Pense no que significa ser "par" em termos das operações aritméticas básicas vistas em aula. Você só pode usar o que foi visto em aula.
 
-        document.write("Par ou ímpar? Caso o número que você digitar for par, aparecerá na tela o número 0, caso o número que você tenha digitado seja ímpar, aparecerá o 1");
+        document.write("Par ou ímpar? Caso o número que você digitar for par, aparecerá na tela o número 0, caso o número que você tenha digitado seja ímpar, aparecerá o 1<br>");
 
         let n = parseInt(prompt("Digite seu número"));
-        let parImpar = n%
+        let parImpar = n % 2;
 
-        document.write("O número que você digitou é " + n + ". Logo, o número que aparece é " + parImpar + ".");
+        document.write("O número que você digitou é " + n + ". <br> Logo, o número que aparece é " + parImpar + ".<br>");
     </script>
 </body>
 </html>
