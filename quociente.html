@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quociente</title>
+</head>
+<body>
+    <script>
+        //Escreva um programa que pede para o usuário digitar dois inteiros e imprime o quociente e o resto da divisão inteira desses inteiros. O programa de imprimir ambas as respostas em um único document.write. Você pode supor que o usuário não tentará dividir por zero.
+
+        document.write("Saiba o valor da divisão e também o quociente dos números que você escolher.");
+
+        let n1 = parseInt(prompt("Digite o primeiro número."));
+        let n2 = parseInt(prompt("Digite o segundo número"));
+
+        let divisao = n1/n2;
+        let quociente = n1%n2;
+
+        document.write("Os números que você escolheu foi " + n1 + " e " + n2 + "<br>. A divisão desses dois números dá o valor de " + divisao + ". O quociente desses dois números é " + quociente + ".");
+    </script>
+</body>
+</html>
