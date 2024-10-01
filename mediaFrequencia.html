@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifique se você foi aprovado</title>
+</head>
+<body>
+    <script>
+        //Verificando se o aluno foi aprovado ou não de acordo com sua nota e frequência.
+
+        document.write("Verifique se você foi aprovado. <br>");
+
+        let n1 = parseFloat(prompt("Digite sua primera nota"));
+        let n2 = parseFloat(prompt("Digite sua segunda nota"));
+        let freq = parseFloat(prompt("Digite sua frequência."));
+
+        let media = (n1 + n2) / 2;
+
+        if (media >= 6 && freq >= 75){
+
+            document.write("Parabéns, você está aprovado. <br> Sua média final é de " + media + " e sua frequência foi de " + freq + "%.<br>");
+            if(media == 10){
+                document.write("Parabéns, você tirou nota máxima.<br> Nota" + media + ".");
+            }
+        } else {
+            if(media >= 6 && freq < 75){
+
+                document.write("Você atingiu a nota " + media + " e seria aprovado, porém, você teve uma frequência menor que 75%. <br> Por isso, está sendo reprovado mas pode fazer a REA.");
+            }else {
+
+                document.write("Você não atingiu a nota para aprovação. Sua média foi " + media + ".<br>");
+            }
+            if(media < 2) {
+
+                document.write("Você foi reprovado e não pode fazer a REA pois não alcançou pelo menos a nota 2 de média.");
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>

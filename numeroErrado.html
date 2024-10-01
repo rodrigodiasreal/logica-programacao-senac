@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número errado</title>
+</head>
+<body>
+    <script>
+        // Escreva um programa que solicita um número inteiro.
+        // Exiba uma mensagem de erro se o número informado estiver entre 15 e 25 ou entre 45 e 50 (inclusive).
+
+        document.write("Digite um número e verifique se ele está na zona errada. <br>");
+
+        let n = parseInt(prompt("Digite um número"));
+
+        if (n >= 15 && n <=25 || n >= 45 && n <= 50) {
+
+            document.write("O número digitado foi " + n + ". Ele está na zona errada.");
+        } else {
+
+            document.write("O número digitado foi " + n + ". Segue o jogo.");
+        }
+    </script>
+    
+</body>
+</html>

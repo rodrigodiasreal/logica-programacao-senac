@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triângulo</title>
+</head>
+<body>
+    <script>
+        //Escrever um algoritmo que leia três valores inteiros e verifique se eles podem ser as medidas dos lados de um triângulo.
+        //Incremente o exercício anterior, para o caso das medidas formarem um triângulo válido, informar qual tipo de triângulo que eles formam: equilátero, isósceles ou escaleno.
+        //Incremente o exercício anterior, agora informando se este é também um triângulo retângulo.
+
+        document.write("Verifique se é possível fazer um triângulo com as medidas informadas.<br>");
+
+        let l1 = parseInt(prompt("Digite a primeira medida"));
+        let l2 = parseInt(prompt("Digite a segunda medida"));
+        let l3 = parseInt(prompt("Digite a última medida"));
+
+        if((l1 + l2 >l3 && l1 + l3 > l2 && l2 + l3 > l1)){
+
+            document.write("Com essas medidas, " + l1 + ", " + l2 + " e " + l3 + ", é possível fazer um triângulo.<br>");
+
+            if(l1 == l2 && l1 == l3){
+                
+                
+                document.write("Este triângulo é equilátero.");
+            }else {
+                if(l1 != l2 && l1 != l3 && l2 != l3){
+
+                document.write("Este triângulo é escaleno.<br>");
+                }else {
+
+                document.write("Este triângulo é isósceles.<br>")
+                } if(l1*l1 == (l2*l2) + (l3*l3) || l2*l2 == (l1*l1) + (l3*l3) || l3*l3 == (l1*l1) + (l2*l2)){
+
+                    document.write("Este triângulo também é retângulo.");
+                }
+
+            } 
+        }else {
+
+            document.write("Com essas medidas, " + l1 + ", " + l2 + " e " + l3 + ", não é possível fazer um triângulo.");
+        }
+            
+    </script>
+    
+</body>
+</html>

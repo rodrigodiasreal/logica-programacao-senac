@@ -13,10 +13,11 @@
 
         let nota1 = parseFloat(prompt("Digite sua primeira nota"));
         let nota2 = parseFloat(prompt("Digite sua segunda nota"));
+        let freq = parseFloat(prompt("Digite sua frequência."));
 
         let media = ((nota1 + nota2) /2);
 
-        if(media >=6){
+        if(media >=6 && freq >= 75){
 
             document.write("Parabéns, você passou, sua média final é: " + media + ".<br>");
 

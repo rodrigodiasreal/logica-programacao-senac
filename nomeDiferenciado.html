@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome diferenciado</title>
+</head>
+<body>
+    <script>
+        //Crie um programa que pergunte o nome do usuário. Exiba uma mensagem diferenciada caso o nome digitado seja "Cícero", "Prático" ou Heitor
+
+        document.write("Descubra se seu nome é diferenciado<br>");
+
+        let nome = prompt("Digite seu nome");
+
+        if(nome == "Heitor" || nome == "Prático" || nome == "Cícero"){
+
+            document.write("Seu nome é " + nome + ". Seu nome é diferenciado.")
+        }else {
+
+            document.write("Seu nome é " + nome + ". Seu nome é comum.");
+        }
+    </script>
+    
+</body>
+</html>
