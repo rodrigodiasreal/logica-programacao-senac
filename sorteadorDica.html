@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador com dica</title>
+</head>
+<body>
+    <script>
+        //Escreva um programa que sorteia um número de 1 a 10, dá duas chances para que o usuário acerte, mas informa se o número sorteado é maior ou menor que o primeiro palpite
+        //Faça o mesmo programa anterior, agora com 3 palpites.
+
+        document.write("Tente acertar o número correto. <br>");
+
+        let palpite = parseInt(prompt("Digite um número de 1 a 10"));
+        let sorteador = Math.floor(Math.random() * 10) +1;
+
+        if(palpite == sorteador){
+
+            document.write("Parabéns, você acertou o número sorteado que era " + sorteador + ".");
+        }else {
+            if(palpite < sorteador){
+
+                alert("Você errou, mas temos uma dica, seu palpite é menor que o número sorteado.");
+            } else {
+
+                alert("Você errou, mas temos uma dica, seu palpite é maior que o número sorteado.")
+            }
+
+            let palpite2 = parseInt(prompt("Tente novamente"));
+
+            if(palpite2 == sorteador){
+
+                document.write("Parabéns, você acertou o número sorteado que era " + sorteador + ".");
+        }else {
+            if(palpite2 < sorteador){
+
+                alert("Você errou, mas temos uma dica, seu palpite é menor que o número sorteado.");
+            } else {
+
+                alert("Você errou, mas temos uma dica, seu palpite é maior que o número sorteado.")
+            }
+            }
+
+            let palpite3 = parseInt(prompt("Tente mais uma vez"));
+
+            if(palpite3 == sorteador) {
+
+                document.write("Parabéns, você acertou o número sorteado que era " + sorteador + ".");
+            } else {
+
+                document.write("Que pena, você errou, o número era " + sorteador + ".");
+            }
+        }
+    </script>
+    
+</body>
+</html>

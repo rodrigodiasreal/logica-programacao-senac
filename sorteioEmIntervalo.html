@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio em intervalo</title>
+</head>
+<body>
+    <script>
+        //3 - Sorteie dois números e 1 a 10. Informe quantos destes números estão entre 3 e 7 (inclusive).
+
+        document.write("Descubra se os números sorteados estão no intervalo <br>");
+
+        let sorteador = Math.floor(Math.random()* 10) +1;
+        let sorteador2 = Math.floor(Math.random()* 10) +1;
+
+        if(sorteador >= 3 && sorteador <= 7 && sorteador2 >= 3 && sorteador2 <=7 ){
+
+            document.write("Ambos os números estão no intervalo entre 3 e 7, os números sorteados foram " + sorteador + " e " + sorteador2 + ".");
+        }else{
+            if(sorteador >= 3 && sorteador <= 7 || sorteador2 >= 3 && sorteador2 <=7){
+
+                document.write("Apenas um número sorteado está no intervalo entre 3 e 7.<br>");
+            }else{
+
+                document.write("Nenhum dos números sorteados está no intervalo entre 3 e 7, os números sorteados foram " + sorteador + " e " + sorteador2 + ".");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de números</title>
+</head>
+<body>
+    <script>
+        //Escreva um programa que sorteia um número de 1 a 10 e dá duas chances para que o usuário acerte.
+
+        document.write("Descubra o número sorteado <br>");
+
+        let sorteador = Math.floor(Math.random()* 10) + 1;
+        let palpite = parseInt(prompt("Digite seu palpite de 1 a 10"));
+
+        if (sorteador == palpite) {
+
+            document.write("Parabéns, você acertou, o número é " + sorteador + ".");
+
+        }else {
+
+            alert("Você errou, tente novamente.");
+
+        let palpite2 = parseInt(prompt("Tente novamente"));
+
+        if(sorteador == palpite2){
+
+            document.write("Parabéns, você acertou, o número é " + sorteador + ".");
+        }else {
+
+            document.write("Você errou, o número era " + sorteador + ".")
+        }
+    }
+    </script>
+</body>
+</html>

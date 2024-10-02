@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio de dois números</title>
+</head>
+<body>
+    <script>
+        //Sorteie dois números de 1 a 5 e peça que o usuário acerte os dois números, não necessariamente na mesma ordem.
+
+        document.write("Tente acertar os dois números através de palpites.<br>");
+
+        let sorteador = Math.floor(Math.random() * 5) + 1;
+        let sorteador2 = Math.floor(Math.random() * 5) +1;
+
+        let palpite = parseInt(prompt("Digite seu primeiro número."));
+        let palpite2 = parseInt(prompt("Digite seu segundo palpite."));
+
+        if(palpite == sorteador && palpite2 == sorteador2 || palpite2 == sorteador && palpite == sorteador2){
+
+            document.write("Você acertou os números eram " + sorteador + " e " + sorteador2);
+        } else {
+
+            document.write("Que pena, você errou, os números eram " + sorteador + " e " + sorteador2 + ".");
+        }
+    </script>
+    
+</body>
+</html>
