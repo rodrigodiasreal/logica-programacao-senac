@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre 10 e 20</title>
+</head>
+<body>
+    <script>
+        //Solicite que o usuário digite um número entre 10 e 20. Se for digitado um número inválido, peça novamente, até ele digitar corretamente.
+
+        document.write("Digite um número entre 10 e 20. <br>");
+
+        let n = parseInt(prompt("Digite um número"));
+
+        while(n < 10 || n > 20 ){
+
+            n = parseInt(prompt("Número inválido, tente novamente."));
+
+        }
+
+        document.write("O número digitado foi " + n + ". Perfeito!");
+
+    </script>
+    
+</body>
+</html>

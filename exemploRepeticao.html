@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetição</title>
+</head>
+<body>
+    <script>
+        //Descobrir em quantas tentativas de sorteio o número de x é descoberto
+
+        let numero;
+        let cont = 0;
+
+        while (numero != 5){
+
+            numero = Math.floor(Math.random()* 10 ) +1;
+            document.write(numero + "<br>");
+            cont++;
+        }
+
+        document.write(" <br> O número 12 foi sorteado em " + cont + " tentativas.");
+    </script>
+    
+</body>
+</html>

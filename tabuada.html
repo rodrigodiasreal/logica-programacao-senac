@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <script>
+        //Escreva um programa que exibe qualquer tabuada completa. O programa deve perguntar ao usuário qual tabuada ele deseja visualizar, que irá responder digitando um número de 1 a 10.
+
+        document.write("Faça sua tabuada.<br>");
+
+        let tabuada = parseInt(prompt("Digite o número da tabuada que você deseja saber.<br>"));
+        let cont = 1;
+
+        document.write("A tabuada escolhida foi a tabuada do " + tabuada + ". <br>");
+
+        while(cont <= 10){
+
+            document.write(tabuada + " x " + cont + " = " + tabuada*cont + "<br>");
+            cont++;
+        }
+
+
+    </script>
+    
+</body>
+</html>
