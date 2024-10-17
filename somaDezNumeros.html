@@ -12,17 +12,18 @@
         document.write("Descubra a soma dos 10 números escolhidos por você.<br>");
 
         let cont = 1;
-        let numero = parseInt(prompt("Digite seu número"));
+        let total = 0;
+        
 
         while(cont <= 10){
 
-            
-            numero += numero;
+            let n = parseInt(prompt("Digite seu número"));
+            total = total + n;
             cont++;
             
-            document.write(numero + "<br>");
-            
-        }
+            }
+
+        document.write(total + "<br>");
 
         
 
