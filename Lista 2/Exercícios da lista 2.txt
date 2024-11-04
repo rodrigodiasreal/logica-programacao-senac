@@ -1,0 +1,13 @@
+Exercícios da lista 2
+
+1 - Faça um algoritmo que receba um número e mostre uma mensagem caso este número seja maior que 10.
+
+2 - Agora seu programa deve receber dois números e exibir eles em ordem crescente.
+
+3 - Solicite que o usuário digite um número. Informe então se este número é par ou ímpar.
+
+4 - Crie um programa que recebe um número inteiro e informa se este número é múltiplo de 10.
+
+5 - Escrever um algoritmo que leia dois valores inteiros distintos e informe qual deles é o maior.
+
+6 - Altere o exercício anterior de forma que ele informe também se os números são iguais.

@@ -1,0 +1,17 @@
+Exercícios da lista 1
+
+1 - Ler as notas de duas provas e mostrar a média aritmética.
+
+2 - Ler o nome do usuário e apresentar a mensagem "Olá <fulano>!" (Importante a exclamação no final).
+
+3 - Escreva um programa que pede para o usuário digitar dois inteiros e imprime o quociente e o resto da divisão inteira desses inteiros. O programa de imprimir ambas as respostas em um único document.write. Você pode supor que o usuário não tentará dividir por zero.
+
+4 - Escreva um programa que pede para o usuário digitar as duas dimensões de um retângulo e imprime o perímetro e a área desse retângulo. O programa deve imprimir ambas as respostas em uma única linha.
+
+5 - Escreva um programa que pede para o usuário digitar um inteiro e imprime o inverso desse inteiro. Ou seja, se o usuário digita 10, o programa imprime -10. Se digita -42, imprime 42. O inverso de um valor pode ser obtido utilizando - como operador unário. Por exemplo, para inverter o valor de uma variável x, você pode usar a atribuição x = -x. Mas note que você não precisa conhecer esse uso do operador para fazer o exercício. De que outras maneiras você pode inverter um número?
+
+6 - Escreva um programa que pede para o usuário digitar um inteiro e imprime apenas um número: 0 ou 1. Imprime 0 se o inteiro digitado for par e imprime 1 caso contrário. Pense no que significa ser "par" em termos das operações aritméticas básicas vistas em aula. Você só pode usar o que foi visto em aula.
+
+7 - Faça um programa que converte temperaturas de Celsius para Fahrenheit.
+
+8 - Faça um programa solicita os valores de peso e altura de uma pessoa, calcule e exiba o IMC (Índice de Massa Corporal).

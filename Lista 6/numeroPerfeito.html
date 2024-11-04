@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Perfeito</title>
+</head>
+<body>
+    <script>
+        // Solicite um número e então diga se este é um número perfeito.
+
+        document.write("Digite um número e descubra se ele é perfeito <br>");
+
+        let numero = parseInt(prompt("Digite um número"));
+        let cont = numero;
+
+        while(cont >=1){
+
+            if(numero % cont == 0){
+
+                document.write(cont + "<br>");
+                let divisor = numero % cont == 0;
+            }
+        cont--;
+        }
+    </script>
+</body>
+</html>
